@@ -1,3 +1,7 @@
+.header-wrapper {
+  background-color: #F7EDE8;
+}
+
 .header {
   &__container {
   }
@@ -17,6 +21,8 @@
   }
 
   &__btn {
+    height: 41px;
+    padding: 0px 24px;
     @include sm {
       margin-right: 10px;
     }
