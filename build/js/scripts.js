@@ -34,3 +34,33 @@ document.addEventListener("click", function (event) {
       submenuLink.classList.remove("_active");
     }
   });
+
+  const swiper = new Swiper('.swiper', {
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    slidesPerView: 5,
+    centeredSlides: true,
+    loop: true,
+      // Autoplay
+  autoplay: {
+    delay: 2500, // Затримка між прокручуванням (у мілісекундах)
+    disableOnInteraction: false, // Прокручування не зупиняється після взаємодії користувача
+  },
+  
+  //   // Responsive breakpoints
+  //   breakpoints: {
+  //   // when window width is >= 320px
+  //   320: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 20
+  //   },
+  //   // when window width is >= 480px
+  //   480: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 30
+  //   },
+  // }
+  });
