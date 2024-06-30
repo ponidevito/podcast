@@ -17,7 +17,6 @@ const submenu = document.querySelector(".submenu");
 const submenuLinkRotate = submenu.querySelector(".link-submenu img");
 const submenuLink = submenu.querySelector(".link-submenu");
 
-
 document.addEventListener("DOMContentLoaded", function () {
   submenuLink.addEventListener("click", function (event) {
     event.preventDefault();
@@ -28,39 +27,44 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("click", function (event) {
-    if (!submenu.contains(event.target) && submenu.classList.contains("open")) {
-      submenu.classList.remove("open");
-      submenuLinkRotate.classList.remove("_active");
-      submenuLink.classList.remove("_active");
-    }
-  });
+  if (!submenu.contains(event.target) && submenu.classList.contains("open")) {
+    submenu.classList.remove("open");
+    submenuLinkRotate.classList.remove("_active");
+    submenuLink.classList.remove("_active");
+  }
+});
 
-  const swiper = new Swiper('.swiper', {
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    slidesPerView: 5,
-    centeredSlides: true,
-    loop: true,
-      // Autoplay
+const swiper = new Swiper(".swiper", {
+  slidesToScroll: 1,
+  loop: true,
+  // // Autoplay
   autoplay: {
-    delay: 2500, // Затримка між прокручуванням (у мілісекундах)
-    disableOnInteraction: false, // Прокручування не зупиняється після взаємодії користувача
+    delay: 2500,
+    disableOnInteraction: false,
   },
-  
-  //   // Responsive breakpoints
-  //   breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 20
-  //   },
-  //   // when window width is >= 480px
-  //   480: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30
-  //   },
-  // }
-  });
+
+  // Responsive breakpoints
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    1440: {
+      slidesPerView: 6,
+      spaceBetween: 30,
+    },
+  },
+});
+
