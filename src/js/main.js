@@ -38,9 +38,10 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   // // Autoplay
   autoplay: {
-    delay: 2500,
+    delay: 3500,
     disableOnInteraction: false,
   },
+  speed: 1300, // Швидкість переходу між слайдами (у мілісекундах)
 
   // Responsive breakpoints
   breakpoints: {

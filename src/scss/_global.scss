@@ -89,6 +89,55 @@
   background-color: transparent;
 }
 
+// title
+
+.top {
+  &:not(:last-child) {
+    margin-bottom: 100px;
+  }
+  &__title {
+    color: $primary;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -2px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    @include lg{
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @include sm{
+      font-size: 30px;
+      line-height: 30px;
+    }
+    @include xs{
+      font-size: 26px;
+      line-height: 24px;
+    }
+  }
+
+  &__subtitle {
+    color: #4d4d4d;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 36px;
+    @include lg{
+      font-size: 20px;
+      line-height: 24px;
+    }
+    @include sm{
+      font-size: 18px;
+    }
+    @include xs{
+      font-size: 16px;
+    }
+  }
+}
+
 // Animations
 // Fade
 @keyframes fade {
