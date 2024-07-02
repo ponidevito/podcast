@@ -94,6 +94,18 @@
 .top {
   &:not(:last-child) {
     margin-bottom: 100px;
+    @include lg {
+      margin-bottom: 65px;
+    }
+    @include md {
+      margin-bottom: 50px;
+    }
+    @include sm {
+      margin-bottom: 40px;
+    }
+    @include xs {
+      margin-bottom: 30px;
+    }
   }
   &__title {
     color: $primary;

@@ -615,6 +615,10 @@ body {
     top: 35px;
   }
 
+  .top:not(:last-child) {
+    margin-bottom: 65px;
+  }
+
   .top__title {
     font-size: 40px;
     line-height: 50px;
@@ -663,9 +667,21 @@ body {
     font-size: 18px;
     line-height: 24px;
   }
+
+  .talk {
+    padding: 65px 0px;
+  }
+
+  .talk__items {
+    gap: 60px;
+  }
 }
 
 @media (max-width: 767.98px) {
+  .top:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
   .header__btn.btn-outline {
     display: none;
   }
@@ -697,6 +713,10 @@ body {
 
   .header-main .social__item-link img {
     max-width: 100%;
+  }
+
+  .talk {
+    padding: 50px 0px;
   }
 }
 
@@ -764,6 +784,10 @@ body {
 }
 
 @media (max-width: 576px) {
+  .top:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
   .top__title {
     font-size: 30px;
     line-height: 30px;
@@ -901,9 +925,33 @@ body {
   .header-main__items {
     margin-top: 30px;
   }
+
+  .talk {
+    padding: 40px 0px;
+  }
+
+  .talk__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .talk__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+
+  .talk__item-picture:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 476px) {
+  .top:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   .top__title {
     font-size: 26px;
     line-height: 24px;
@@ -923,5 +971,9 @@ body {
 
   .header-main__subtitle {
     font-size: 14px;
+  }
+
+  .talk {
+    padding: 30px 0px;
   }
 }

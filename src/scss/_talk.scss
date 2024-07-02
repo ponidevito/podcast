@@ -1,7 +1,16 @@
 .talk {
   padding: 140px 0px;
-
-  &__top {
+  @include lg {
+    padding: 65px 0px;
+  }
+  @include md {
+    padding: 50px 0px;
+  }
+  @include sm {
+    padding: 40px 0px;
+  }
+  @include xs {
+    padding: 30px 0px;
   }
 
   &__items {
@@ -9,6 +18,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 100px;
+    @include lg {
+      gap: 60px;
+    }
+    @include sm {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
   }
 
   &__item {
@@ -22,14 +38,20 @@
       font-size: 16px;
       line-height: 26px;
     }
+    @include sm {
+      flex: 1 1 100%;
+    }
   }
 
   &__item-picture {
     img {
-        max-width: 100%;
+      max-width: 100%;
     }
     &:not(:last-child) {
       margin-bottom: 40px;
+      @include sm {
+        margin-bottom: 20px;
+      }
     }
   }
 }
