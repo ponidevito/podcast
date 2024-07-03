@@ -493,7 +493,30 @@ h6 {
 }
 
 .talk {
+  position: relative;
   padding: 140px 0px;
+}
+
+.talk .scribble {
+  position: absolute;
+  z-index: 44;
+  left: 50%;
+  top: -50px;
+  -webkit-transform: translate(-50%, -20%);
+      -ms-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+}
+
+.talk .decor-left {
+  position: absolute;
+  left: -50px;
+  bottom: 50px;
+}
+
+.talk .decor-right {
+  position: absolute;
+  right: -50px;
+  top: -50px;
 }
 
 .talk__items {
@@ -507,6 +530,10 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 100px;
+}
+
+.talk__items:not(:last-child) {
+  margin-bottom: 120px;
 }
 
 .talk__item {
@@ -538,6 +565,75 @@ h6 {
 
 .talk__item-picture:not(:last-child) {
   margin-bottom: 40px;
+}
+
+.talk__review-body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f7ede8;
+  padding: 40px 15px;
+  border-radius: 8px;
+}
+
+.talk__review-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 690px;
+}
+
+.talk__review-icon:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.talk__review-title {
+  color: #000;
+  font-weight: 700;
+  line-height: 51px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.talk__review-title:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.talk__review-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.talk__review-author-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.talk__review-author-text {
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 html,
@@ -589,6 +685,16 @@ body {
   .header-main .swiper-slide__text {
     font-size: 22px;
     line-height: 34px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .talk .decor-left {
+    left: 0px;
+  }
+
+  .talk .decor-right {
+    right: 0px;
   }
 }
 
@@ -672,8 +778,48 @@ body {
     padding: 65px 0px;
   }
 
+  .talk .scribble img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .talk .scribble {
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+
+  .talk .decor-left {
+    display: none;
+  }
+
+  .talk .decor-right {
+    display: none;
+  }
+
   .talk__items {
     gap: 60px;
+  }
+
+  .talk__items:not(:last-child) {
+    margin-bottom: 65px;
+  }
+
+  .talk__review-body {
+    padding: 20px 15px;
+  }
+
+  .talk__review-icon:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .talk__review-title:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .talk__review-title {
+    font-size: 40px;
+    line-height: 50px;
   }
 }
 
@@ -717,6 +863,14 @@ body {
 
   .talk {
     padding: 50px 0px;
+  }
+
+  .talk .scribble {
+    display: none;
+  }
+
+  .talk__items:not(:last-child) {
+    margin-bottom: 50px;
   }
 }
 
@@ -936,6 +1090,10 @@ body {
     gap: 10px;
   }
 
+  .talk__items:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
   .talk__item {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
@@ -944,6 +1102,11 @@ body {
 
   .talk__item-picture:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  .talk__review-title {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
@@ -975,5 +1138,22 @@ body {
 
   .talk {
     padding: 30px 0px;
+  }
+
+  .talk__items:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .talk__review-title {
+    font-size: 26px;
+    line-height: 24px;
+  }
+
+  .talk__review-author {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
