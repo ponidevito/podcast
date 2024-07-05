@@ -33,37 +33,73 @@ document.addEventListener("click", function (event) {
   }
 });
 
-const swiper = new Swiper(".swiper", {
-  slidesToScroll: 1,
-  loop: true,
-  // // Autoplay
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
-  speed: 1300, // Швидкість переходу між слайдами (у мілісекундах)
+let headerMainSwiper = document.querySelector(".header-main__swiper");
+if (headerMainSwiper) {
+  const swiper = new Swiper(".swiper-header", {
+    slidesToScroll: 1,
+    loop: true,
+    // // Autoplay
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    speed: 1300, // Швидкість переходу між слайдами (у мілісекундах)
 
-  // Responsive breakpoints
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+    // Responsive breakpoints
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1440: {
+        slidesPerView: 6,
+        spaceBetween: 30,
+      },
     },
-    576: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+  });
+}
+
+let reviewsSwiper = document.querySelector(".reviews__swiper");
+if (reviewsSwiper) {
+  const swiperReviews = new Swiper(".swiper-reviews", {
+  
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    992: {
-      slidesPerView: 3,
-      spaceBetween: 20,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // 992: {
+      //   slidesPerView: 3,
+      //   spaceBetween: 20,
+      // },
+      // 1200: {
+      //   slidesPerView: 4,
+      //   spaceBetween: 30,
+      // },
+    
     },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-    1440: {
-      slidesPerView: 6,
-      spaceBetween: 30,
-    },
-  },
-});
+  });
+}
