@@ -1,78 +1,131 @@
 .reviews {
+  position: relative;
+  background-color: #edf3f7;
+  padding: 140px 0px 100px 0px;
+  @include lg {
+    padding: 65px 0px;
+  }
+  @include md {
+    padding: 50px 0px;
+  }
+  @include sm {
+    padding: 40px 0px;
+  }
+  @include xs {
+    padding: 30px 0px;
+  }
+  &__container {
+  }
 
-    &__container {
+  &__swiper {
+    .swiper-reviews {
+      overflow: visible !important;
     }
-
-    &__top {
+    .swiper__buttons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-top: 60px;
+      @include lg {
+        margin-top: 40px;
+      }
+      @include sm {
+        margin-top: 20px;
+      }
+      @include xs {
+        justify-content: center;
+        gap: 40px;
+      }
     }
-
-    &__body {
+    .btn-prev,
+    .btn-next {
+      cursor: pointer;
+      svg path {
+        transition: 0.3s ease;
+      }
     }
-
-    &__swiper {
+    .swiper-button-disabled {
+      svg path {
+        stroke: #cd4631;
+      }
     }
+  }
+  .scribble {
+    position: absolute;
+    z-index: 44;
+    left: 50%;
+    top: -50px;
+    transform: translate(-50%,-20%);
+    img {
+      @include lg {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    @include lg {
+      transform: translate(-50%,0%);
+    }
+    @include md {
+      display: none;
+    }
+  }
 }
-.top {
 
-    &__title {
-    }
-
-    &__subtitle {
-    }
-}
-.swiper {
-}
-.swiper-reviews {
-overflow: visible!important;
-}
-.swiper-wrapper {
-}
 .swiper-slide {
-    &__content {
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    background-color: #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+  &__content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include xs {
+      padding: 25px;
     }
+  }
 
-    &__icon {
-        &:not(:last-child) {
-            margin-bottom: 40px;
-        }
+  &__icon {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+      @include lg {
+        margin-bottom: 20px;
+      }
     }
+  }
 
-    &__text {
-        color: $primary;
-        font-size: 22px;
-        line-height: 36px;
-        letter-spacing: 0;
-        &:not(:last-child) {
-            margin-bottom: 40px;
-        }
+  &__text {
+    color: $primary;
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+      @include lg {
+        margin-bottom: 20px;
+      }
     }
+    @include lg {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @include lg {
+      font-size: 16px;
+    }
+  }
 
-    &__review-author {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    &__author-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
+  &__review-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__author-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 
-    &__review-author-text {
-    }
-
-  
-}
-.talk {
-
-    &__review-author-item {
-    }
-}
-.swiper-btn-prev {
-}
-.swiper-btn-next {
+  &__review-author-text {
+    font-size: 14px;
+    color: inherit;
+  }
 }

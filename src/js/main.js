@@ -78,8 +78,8 @@ if (reviewsSwiper) {
 
     // Navigation arrows
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".btn-next",
+      prevEl: ".btn-prev",
     },
 
     breakpoints: {

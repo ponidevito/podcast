@@ -636,8 +636,55 @@ h6 {
   line-height: 22px;
 }
 
-.swiper-reviews {
+.reviews {
+  position: relative;
+  background-color: #edf3f7;
+  padding: 140px 0px 100px 0px;
+}
+
+.reviews__swiper .swiper-reviews {
   overflow: visible !important;
+}
+
+.reviews__swiper .swiper__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+
+.reviews__swiper .btn-prev,
+.reviews__swiper .btn-next {
+  cursor: pointer;
+}
+
+.reviews__swiper .btn-prev svg path,
+.reviews__swiper .btn-next svg path {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.reviews__swiper .swiper-button-disabled svg path {
+  stroke: #cd4631;
+}
+
+.reviews .scribble {
+  position: absolute;
+  z-index: 44;
+  left: 50%;
+  top: -50px;
+  -webkit-transform: translate(-50%, -20%);
+      -ms-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+}
+
+.swiper-slide {
+  background-color: #FFFFFF;
+  border-radius: 8px 8px 8px 8px;
 }
 
 .swiper-slide__content {
@@ -687,6 +734,11 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+}
+
+.swiper-slide__review-author-text {
+  font-size: 14px;
+  color: inherit;
 }
 
 html,
@@ -874,6 +926,42 @@ body {
     font-size: 40px;
     line-height: 50px;
   }
+
+  .reviews {
+    padding: 65px 0px;
+  }
+
+  .reviews__swiper .swiper__buttons {
+    margin-top: 40px;
+  }
+
+  .reviews .scribble img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .reviews .scribble {
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+
+  .swiper-slide__icon:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .swiper-slide__text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .swiper-slide__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .swiper-slide__text {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -924,6 +1012,14 @@ body {
 
   .talk__items:not(:last-child) {
     margin-bottom: 50px;
+  }
+
+  .reviews {
+    padding: 50px 0px;
+  }
+
+  .reviews .scribble {
+    display: none;
   }
 }
 
@@ -1161,6 +1257,14 @@ body {
     font-size: 30px;
     line-height: 30px;
   }
+
+  .reviews {
+    padding: 40px 0px;
+  }
+
+  .reviews__swiper .swiper__buttons {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 476px) {
@@ -1208,5 +1312,20 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .reviews {
+    padding: 30px 0px;
+  }
+
+  .reviews__swiper .swiper__buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px;
+  }
+
+  .swiper-slide__content {
+    padding: 25px;
   }
 }
