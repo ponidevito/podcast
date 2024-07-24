@@ -14,8 +14,6 @@
   @include xs {
     padding: 30px 0px;
   }
-  &__container {
-  }
 
   &__swiper {
     .swiper-reviews {
@@ -55,7 +53,7 @@
     z-index: 44;
     left: 50%;
     top: -50px;
-    transform: translate(-50%,-20%);
+    transform: translate(-50%, -20%);
     img {
       @include lg {
         width: 100px;
@@ -63,7 +61,7 @@
       }
     }
     @include lg {
-      transform: translate(-50%,0%);
+      transform: translate(-50%, 0%);
     }
     @include md {
       display: none;
@@ -72,8 +70,8 @@
 }
 
 .swiper-slide {
-    background-color: #FFFFFF;
-    border-radius: 8px 8px 8px 8px;
+  background-color: #ffffff;
+  border-radius: 8px 8px 8px 8px;
   &__content {
     padding: 40px;
     display: flex;
