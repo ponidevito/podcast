@@ -1,0 +1,187 @@
+.episodes {
+  background-color: #f7ede8;
+  padding: 140px 0px;
+  position: relative;
+  @include lg {
+    padding: 65px 0px;
+  }
+  @include md {
+    padding: 50px 0px;
+  }
+  @include sm {
+    padding: 40px 0px;
+  }
+  @include xs {
+    padding: 30px 0px;
+  }
+}
+
+.row-episodes {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  @include md {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 16px;
+    &.shadow {
+      box-shadow: 10px 10px 0 0 #81adc8;
+    }
+  }
+  &__item-top {
+    display: flex;
+    gap: 20px;
+    @include xs {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &__item-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    @include xs {
+      gap: 20px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+  &__item {
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    &.right {
+      padding: 17.5px 0px;
+      flex-direction: column;
+    //   @include lg {
+    //     padding: 0px;
+    //   }
+    }
+    @include xs {
+      flex-direction: unset;
+      justify-content: center;
+    }
+  }
+
+  &__image {
+    display: flex;
+    position: relative;
+    img {
+      border-radius: 8px;
+    }
+  }
+
+  &__social {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__social-item {
+  }
+
+  &__actions {
+    display: flex;
+    gap: 6px;
+    @include xs {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__btn {
+    border: 1px solid #4d4d4d;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 160%;
+    color: #4d4d4d;
+  }
+
+  &__top {
+    border-bottom: 1px solid #4d4d4d;
+  }
+
+  &__number-episode {
+    color: #cd4631;
+    font-size: 16px;
+    line-height: 160%;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__name {
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #cd4631;
+    margin-bottom: 15px;
+  }
+
+  &__bottom {
+    padding-top: 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 160%;
+    color: #4d4d4d;
+  }
+
+  &__hosted {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 50px;
+    position: relative;
+    @include xs {
+    }
+  }
+
+  &__hosted-text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 160%;
+    color: #4d4d4d;
+  }
+
+  &__hosted-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__hosted-icon {
+    &.first-icon {
+      position: absolute;
+      right: 0px;
+      border: 2px solid #fff;
+      border-radius: 100%;
+      z-index: 2;
+    }
+    &.second-icon {
+      position: absolute;
+      right: 25px;
+      z-index: 1;
+    }
+  }
+}
+.left {
+}
+.right {
+}
