@@ -84,7 +84,7 @@
     &:not(:last-child) {
       margin-bottom: 80px;
       @include xs {
-        margin-bottom: -20px;
+        margin-bottom: 20px;
       }
     }
   }
