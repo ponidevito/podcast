@@ -1,22 +1,28 @@
 .sponsor {
-    padding: 140px 0px;
-    position: relative;
-    @include lg {
-      padding: 65px 0px;
-    }
-    @include md {
-      padding: 50px 0px;
-    }
-    @include sm {
-      padding: 40px 0px;
-    }
-    @include xs {
-      padding: 30px 0px;
-    }
+  padding: 140px 0px;
+  position: relative;
+  @include lg {
+    padding: 65px 0px;
+  }
+  @include md {
+    padding: 50px 0px;
+  }
+  @include sm {
+    padding: 40px 0px;
+  }
+  @include xs {
+    padding: 30px 0px;
+  }
   &__row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    @media (max-width: 1140px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include md {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__column {
@@ -26,9 +32,31 @@
     &.bg {
       background-color: #f7ede8;
     }
+    @include md {
+        padding: 30px 30px;
+    }
   }
 }
 .column {
+  label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    color: #4d4d4d;
+  }
+  &__list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__list-item {
+    font-size: 16px;
+    line-height: 160%;
+    color: $primary;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
   &__title {
     font-weight: 700;
     font-size: 36px;
@@ -38,16 +66,22 @@
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+    @include xs {
+      text-align: center;
+    }
   }
   &__popular {
     display: flex;
     align-items: center;
     justify-content: space-between;
     &:not(:last-child) {
-        margin-bottom: 20px;
-      }
+      margin-bottom: 20px;
+    }
     .column__title {
-        margin-bottom: 0;
+      margin-bottom: 0;
+    }
+    @include xs {
+      flex-direction: column;
     }
   }
   &__popular-text {
@@ -73,6 +107,14 @@
     display: flex;
     justify-content: space-between;
     margin-top: 90px;
+    gap: 20px;
+    @include md {
+      margin-top: 30px;
+    }
+    @include xs {
+      margin-top: 20px;
+      flex-direction: column-reverse;
+    }
   }
 
   &__btn {
@@ -80,7 +122,6 @@
 
   &__price {
     display: flex;
-
     font-weight: 700;
     font-size: 22px;
     line-height: 140%;
@@ -89,6 +130,9 @@
     span {
       font-size: 14px;
       color: #4d4d4d;
+    }
+    @include xs {
+      line-height: 110%;
     }
   }
 }
