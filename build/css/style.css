@@ -1072,6 +1072,25 @@ h6 {
   position: relative;
 }
 
+.sponsor__top {
+  position: relative;
+  z-index: 1;
+}
+
+.sponsor__box {
+  position: relative;
+}
+
+.sponsor .decor {
+  position: absolute;
+  left: 20%;
+  top: -35px;
+}
+
+.sponsor .decor img {
+  position: absolute;
+}
+
 .sponsor__row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1086,6 +1105,16 @@ h6 {
 
 .sponsor__column.bg {
   background-color: #f7ede8;
+}
+
+.sponsor .scribble {
+  position: absolute;
+  z-index: 44;
+  left: 50%;
+  top: -50px;
+  -webkit-transform: translate(-50%, -20%);
+      -ms-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
 }
 
 .column label {
@@ -1283,6 +1312,10 @@ body {
 
   .header-main .social__item-link {
     padding: 20px 0px;
+  }
+
+  .sponsor .decor {
+    display: none;
   }
 }
 
@@ -1500,6 +1533,17 @@ body {
   .sponsor {
     padding: 65px 0px;
   }
+
+  .sponsor .scribble img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sponsor .scribble {
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1599,6 +1643,10 @@ body {
 
   .sponsor__column {
     padding: 30px 30px;
+  }
+
+  .sponsor .scribble {
+    display: none;
   }
 
   .column__info {
