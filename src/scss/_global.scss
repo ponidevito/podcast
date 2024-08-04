@@ -60,6 +60,7 @@
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
 // btn
 .btn {
   padding: 0px 48px;
@@ -237,7 +238,11 @@
 
   &__social-item {
     img {
+      transition: 0.3s ease;
       width: 12px;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 
@@ -337,6 +342,128 @@
       z-index: 1;
     }
   }
+}
+// column news
+.column-news {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  &.shadow {
+    box-shadow: 10px 10px 0 0 #000;
+    background: #fff;
+  }
+
+  &__picture {
+    img {
+      border-radius: 8px;
+      max-width: 100%;
+      width: 100%;
+    }
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 26px;
+    height: 100%;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    color: #4d4d4d;
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #cd4631;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    @include lg {
+      font-size: 30px;
+      line-height: 130%;
+    }
+    @include sm {
+      font-size: 26px;
+      line-height: 120%;
+    }
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 160%;
+    color: #4d4d4d;
+    margin-top: auto;
+  }
+
+  &__actions {
+    border-top: 1px solid #4d4d4d;
+    padding-top: 26px;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+    @include md {
+      flex-direction: column;
+    }
+    @include sm {
+      flex-direction: unset;
+    }
+    @media (max-width: 392px) {
+      flex-direction: column;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    border: 1px solid #4d4d4d;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 160%;
+    color: #4d4d4d;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: #cd4631;
+      color: #fff;
+      border: 1px solid transparent;
+    }
+  }
+
+  &__date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 160%;
+    color: #4d4d4d;
+  }
+}
+
+.black {
+  color: #000 !important;
 }
 
 // Animations

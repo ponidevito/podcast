@@ -35,6 +35,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    position: relative;
+    z-index: 2;
     @media (max-width: 1140px) {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -42,16 +44,51 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
+  .decor-right {
+    position: absolute;
+    right: -75px;
+    top: -70px;
+    z-index: -1;
+    img {
+      @include sm {
+        width: 100px;
+      }
+    }
+    @include sm {
+      right: -30px;
+      top: -30px;
+    }
+  }
+  .decor-left {
+    position: absolute;
+    left: -80px;
+    bottom: -45px;
+    z-index: -1;
+    img {
+      @include sm {
+        width: 100px;
+      }
+    }
+    @include sm {
+      display: none;
+    }
+  }
 
   &__column {
     border: 1.5px solid #000;
     border-radius: 8px;
     padding: 60px 40px 30px 40px;
+    display: flex;
+    height: 357px;
+    flex-direction: column;
+    background-color: #ffffff;
+
     &.bg {
       background-color: #f7ede8;
     }
     @include md {
       padding: 30px 30px;
+      height: auto;
     }
   }
   .scribble {
@@ -75,6 +112,8 @@
   }
 }
 .column {
+  position: relative; // Додайте це для встановлення контексту укладання
+  z-index: 3;
   label {
     font-weight: 700;
     font-size: 14px;
@@ -143,7 +182,7 @@
   &__info {
     display: flex;
     justify-content: space-between;
-    margin-top: 90px;
+    margin-top: auto;
     gap: 20px;
     @include md {
       margin-top: 30px;

@@ -1,5 +1,4 @@
-.episodes {
-  background-color: #f7ede8;
+.news {
   padding: 140px 0px;
   position: relative;
   @include lg {
@@ -16,37 +15,14 @@
   }
 
   &__row {
-    position: relative;
-    .decor {
-      position: absolute;
-      top: -110px;
-      right: -100px;
-      @media (max-width: 1440px) {
-        top: -80px;
-        right: -70px;
-      }
-      @media (max-width: 1340px) {
-        display: none;
-      }
-    }
-  }
-  &__active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    @include lg {
-      margin-top: 70px;
-    }
-    @include md {
-      margin-top: 50px;
-    }
-    @include xs {
-      margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include sm {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
-  
   .scribble {
     position: absolute;
     z-index: 44;
@@ -67,3 +43,5 @@
     }
   }
 }
+
+
