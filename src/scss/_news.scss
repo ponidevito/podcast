@@ -18,8 +18,47 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    position: relative;
+    z-index: 2;
     @include sm {
       grid-template-columns: repeat(1, 1fr);
+    }
+    .decor-left {
+      position: absolute;
+      top: -80px;
+      left: -90px;
+      z-index: -1;
+      img {
+        @include sm {
+          width: 100px;
+          top: -40px;
+          left: -45px;
+        }
+      }
+      @include sm {
+        top: -40px;
+        left: -45px;
+      }
+    }
+    .decor-right {
+      position: absolute;
+      bottom: -100px;
+      right: -100px;
+      z-index: -1;
+      @media (max-width: 1380px) {
+        display: none;
+      }
+    }
+  }
+  &__active {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    @include md {
+      margin-top: 50px;
+    }
+    @include xs {
+      margin-top: 20px;
     }
   }
 
@@ -43,5 +82,3 @@
     }
   }
 }
-
-
