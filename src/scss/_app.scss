@@ -33,6 +33,76 @@
       display: none;
     }
   }
+  .decor1 {
+    position: absolute;
+    top: 365px;
+    z-index: 3;
+    @media (max-width: 1399.99px) {
+      display: none;
+    }
+  }
+  .decor2 {
+    position: absolute;
+    top: 327px;
+    left: 125px;
+    @media (max-width: 1399.99px) {
+      display: none;
+    }
+  }
+  .decor3 {
+    position: absolute;
+    top: 296px;
+    left: 105px;
+    @media (max-width: 1399.99px) {
+      display: none;
+    }
+  }
+  .decor-right {
+    position: absolute;
+    bottom: 0;
+    right: 121px;
+    @media (max-width: 1399.99px) {
+      right: 70px;
+      img {
+        width: 100px;
+      }
+    }
+    @include md {
+      display: none;
+    }
+  }
+
+  &__picture-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 373px;
+    z-index: 2;
+    img {
+      width: 100%;
+    }
+    @media (max-width: 1399.99px) {
+      max-width: 200px;
+    }
+    @include md {
+      display: none;
+    }
+  }
+  &__picture-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 373px;
+    img {
+      width: 100%;
+    }
+    @media (max-width: 1399.99px) {
+      max-width: 200px;
+    }
+    @include md {
+      display: none;
+    }
+  }
 
   &__beta {
     display: flex;
@@ -70,20 +140,48 @@
     max-width: 210px;
     margin: 0 auto;
     .decor-mid {
-        position: absolute;
-        top: -60px;
-        right: -60px;
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      @include md {
+        display: none;
       }
+    }
   }
   &__btn {
     width: 100%;
     padding: 0px;
   }
+  &__social {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
-.top {
-  &__title {
+
+.social-app {
+  &__text {
+    font-size: 14px;
+    line-height: 160%;
+    color: #4d4d4d;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
-  &__subtite {
+  &__icons {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    img {
+      transition: 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 }

@@ -1463,6 +1463,53 @@ h6 {
           transform: translate(-50%, -20%);
 }
 
+.app .decor1 {
+  position: absolute;
+  top: 365px;
+  z-index: 3;
+}
+
+.app .decor2 {
+  position: absolute;
+  top: 327px;
+  left: 125px;
+}
+
+.app .decor3 {
+  position: absolute;
+  top: 296px;
+  left: 105px;
+}
+
+.app .decor-right {
+  position: absolute;
+  bottom: 0;
+  right: 121px;
+}
+
+.app__picture-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 373px;
+  z-index: 2;
+}
+
+.app__picture-left img {
+  width: 100%;
+}
+
+.app__picture-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 373px;
+}
+
+.app__picture-right img {
+  width: 100%;
+}
+
 .app__beta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1521,6 +1568,51 @@ h6 {
   padding: 0px;
 }
 
+.app__social {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social-app__text {
+  font-size: 14px;
+  line-height: 160%;
+  color: #4d4d4d;
+}
+
+.social-app__text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.social-app__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.social-app__item img {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.social-app__item img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 html,
 body {
   height: 100%;
@@ -1575,6 +1667,36 @@ body {
   .episodes__row .decor {
     top: -80px;
     right: -70px;
+  }
+}
+
+@media (max-width: 1399.99px) {
+  .app .decor1 {
+    display: none;
+  }
+
+  .app .decor2 {
+    display: none;
+  }
+
+  .app .decor3 {
+    display: none;
+  }
+
+  .app .decor-right {
+    right: 70px;
+  }
+
+  .app .decor-right img {
+    width: 100px;
+  }
+
+  .app__picture-left {
+    max-width: 200px;
+  }
+
+  .app__picture-right {
+    max-width: 200px;
   }
 }
 
@@ -2016,6 +2138,22 @@ body {
   }
 
   .app .scribble {
+    display: none;
+  }
+
+  .app .decor-right {
+    display: none;
+  }
+
+  .app__picture-left {
+    display: none;
+  }
+
+  .app__picture-right {
+    display: none;
+  }
+
+  .app__actions .decor-mid {
     display: none;
   }
 }
