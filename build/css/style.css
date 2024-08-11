@@ -1613,6 +1613,138 @@ h6 {
           transform: scale(1.1);
 }
 
+.footer {
+  padding: 140px 0px 80px 0px;
+}
+
+.footer-top {
+  padding-bottom: 137px;
+}
+
+.top-footer__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.top-footer__item.second-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 93px;
+}
+
+.top-footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 24px;
+}
+
+.top-footer__logo:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.top-footer__text {
+  width: 275px;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4d4d4d;
+}
+
+.top-footer__text:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.top-footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.top-footer__social-item svg path {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.top-footer__social-item:hover svg path {
+  fill: #cd4631;
+}
+
+.top-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.top-footer__list-link {
+  font-size: 16px;
+  line-height: 160%;
+  color: #000;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.top-footer__list-link:hover {
+  color: #cd4631;
+}
+
+.top-footer__platform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-footer__platform:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.top-footer__platform-text {
+  font-size: 16px;
+  line-height: 160%;
+  color: #4d4d4d;
+}
+
+.top-footer__platform-text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.top-footer__platform-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 38px;
+}
+
+.top-footer__available-text {
+  font-size: 16px;
+  line-height: 160%;
+  color: #4d4d4d;
+}
+
+.top-footer__available-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.top-footer__available-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
 html,
 body {
   height: 100%;
