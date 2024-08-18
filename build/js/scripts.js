@@ -105,3 +105,27 @@ if (reviewsSwiper) {
   });
 }
 
+
+// counter 
+document.addEventListener("DOMContentLoaded", function() {
+  const counters = document.querySelectorAll('.header-main-about__number');
+  const speed = 180; // Швидкість анімації
+
+  counters.forEach(counter => {
+      const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText.replace('K', '');
+
+          const increment = target / speed;
+
+          if (count < target) {
+              counter.innerText = Math.ceil(count + increment) + 'K';
+              setTimeout(updateCount, 1);
+          } else {
+              counter.innerText = target.toLocaleString() + 'K';
+          }
+      };
+
+      updateCount();
+  });
+});
