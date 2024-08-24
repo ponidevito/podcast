@@ -60,6 +60,21 @@
         display: none;
       }
     }
+    .decor-right {
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      @include sm {
+        top: -30px;
+        left: -20px;
+      }
+      @include xs {
+        display: none;
+      }
+    }
+    &.about-bottom {
+      margin: 100px auto 80px auto;
+    }
   }
   &__row {
     margin-top: 80px;
