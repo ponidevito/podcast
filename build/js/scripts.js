@@ -105,6 +105,42 @@ if (reviewsSwiper) {
   });
 }
 
+// our sponsor swiper
+
+
+let ourSponsorSwiper = document.querySelector(".our-sponsor__swiper");
+if (ourSponsorSwiper) {
+  const swiperReviews = new Swiper(".swiper-sponsor", {
+  
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".btn-next",
+      prevEl: ".btn-prev",
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // 992: {
+      //   slidesPerView: 3,
+      //   spaceBetween: 20,
+      // },
+      // 1200: {
+      //   slidesPerView: 4,
+      //   spaceBetween: 30,
+      // },
+    
+    },
+  });
+}
+
 
 // counter 
 document.addEventListener("DOMContentLoaded", function() {
