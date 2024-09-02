@@ -1,0 +1,109 @@
+.form {
+  padding: 140px 0px;
+  @include lg {
+    padding: 65px 0px;
+  }
+  @include md {
+    padding: 50px 0px;
+  }
+  @include sm {
+    padding: 40px 0px;
+  }
+  @include xs {
+    padding: 30px 0px;
+  }
+  &__container {
+    max-width: 766px;
+  }
+  &__box {
+    position: relative;
+    width: 370px;
+    margin: 0 auto;
+    @include xs {
+      width: 100%;
+    }
+  }
+  .decor {
+    position: absolute;
+    top: -15px;
+    right: -8%;
+    @include lg {
+      right: 6%;
+    }
+    @include sm {
+      right: 14%;
+      top: -20px;
+    }
+    @include xs {
+      display: none;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+      @include xs {
+        margin-bottom: 10px;
+      }
+    }
+    @include xs {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &__item {
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include xs {
+      width: 100%;
+      gap: 10px;
+    }
+  }
+
+  &__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    color: $primary;
+    span {
+      color: $secondary;
+    }
+    &.label-textarea {
+      margin-bottom: 20px;
+      @include xs {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: 1.5px solid $primary;
+    padding: 20px;
+    border-radius: 8px;
+    outline: none;
+    &:focus {
+      border: 1.5px solid $secondary;
+    }
+    @include xs {
+      padding: 10px;
+    }
+    &.input-textarea {
+      height: 165px;
+      resize: none;
+      @include xs {
+        height: 100px;
+      }
+    }
+  }
+}

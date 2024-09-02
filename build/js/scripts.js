@@ -107,7 +107,6 @@ if (reviewsSwiper) {
 
 // our sponsor swiper
 
-
 let ourSponsorSwiper = document.querySelector(".our-sponsor__swiper");
 if (ourSponsorSwiper) {
   const swiperReviews = new Swiper(".swiper-sponsor", {
@@ -141,7 +140,6 @@ if (ourSponsorSwiper) {
   });
 }
 
-
 // counter 
 document.addEventListener("DOMContentLoaded", function() {
   const counters = document.querySelectorAll('.header-main-about__number');
@@ -165,3 +163,13 @@ document.addEventListener("DOMContentLoaded", function() {
       updateCount();
   });
 });
+
+// mask
+var element = document.getElementById('phone');
+var maskOptions = {
+    mask: '+{38} (000) 000-00-00',
+    lazy: false
+} 
+var mask = new IMask(element, maskOptions);
+
+
