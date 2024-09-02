@@ -2061,6 +2061,23 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+
+.form__body:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.form__body .decor-left {
+  position: absolute;
+  bottom: 0;
+  left: -320px;
+}
+
+.form__body .decor-right {
+  position: absolute;
+  top: 0;
+  right: -190px;
 }
 
 .form__row {
@@ -2121,6 +2138,36 @@ h6 {
 .form__input.input-textarea {
   height: 165px;
   resize: none;
+}
+
+.form__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form__text-item.item-last {
+  width: 176px;
+}
+
+.form__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  color: #000;
+}
+
+.form__text span {
+  color: #cd4631;
 }
 
 .footer {
@@ -2380,6 +2427,12 @@ body {
   }
 }
 
+@media (max-width: 1420px) {
+  .form__body .decor-left {
+    left: -220px;
+  }
+}
+
 @media (max-width: 1399.99px) {
   .app .decor1 {
     display: none;
@@ -2429,6 +2482,20 @@ body {
 
   .talk .decor-right {
     right: 0px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .form__body .decor-left {
+    left: -100px;
+  }
+
+  .form__body .decor-left img {
+    width: 80px;
+  }
+
+  .form__body .decor-right {
+    right: -100px;
   }
 }
 
@@ -2788,6 +2855,14 @@ body {
 
   .form .decor {
     right: 6%;
+  }
+
+  .form__body .decor-left {
+    display: none;
+  }
+
+  .form__body .decor-right {
+    display: none;
   }
 
   .footer {
@@ -3401,6 +3476,10 @@ body {
     top: -20px;
   }
 
+  .form__body:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
   .footer {
     padding: 40px 0px;
   }
@@ -3674,6 +3753,10 @@ body {
     display: none;
   }
 
+  .form__body:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   .form__row:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -3701,6 +3784,10 @@ body {
 
   .form__input.input-textarea {
     height: 100px;
+  }
+
+  .form__button {
+    width: 100%;
   }
 
   .footer {

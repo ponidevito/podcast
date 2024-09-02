@@ -42,6 +42,46 @@
   &__body {
     display: flex;
     flex-direction: column;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 60px;
+      @include sm {
+        margin-bottom: 40px;
+      }
+      @include xs {
+        margin-bottom: 20px;
+      }
+    }
+    .decor-left {
+      position: absolute;
+      bottom: 0;
+      left: -320px;
+      @media (max-width: 1420px) {
+        left: -220px;
+      }
+      @media (max-width: 1220px) {
+        left: -100px;
+      }
+      img {
+        @media (max-width: 1220px) {
+          width: 80px;
+        }
+      }
+      @include lg {
+        display: none;
+      }
+    }
+    .decor-right {
+      position: absolute;
+      top: 0;
+      right: -190px;
+      @media (max-width: 1220px) {
+        right: -100px;
+      }
+      @include lg {
+        display: none;
+      }
+    }
   }
 
   &__row {
@@ -104,6 +144,34 @@
       @include xs {
         height: 100px;
       }
+    }
+  }
+  &__submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__text-item {
+    &.item-last {
+      width: 176px;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    color: $primary;
+    span {
+      color: $secondary;
+    }
+  }
+
+  &__button {
+    @include xs {
+      width: 100%;
     }
   }
 }
