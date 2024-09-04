@@ -56,4 +56,93 @@
     letter-spacing: -0.08em;
     color: #81adc8;
   }
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__episodes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__episodes-number {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: $secondary;
+  }
+
+  &__episodes-outline {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 160%;
+    color: #cd4631;
+    border: 1px solid #cd4631;
+    border-radius: 4px;
+    padding: 3px 6px;
+  }
+
+  &__episodes-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: $primary;
+    padding-bottom: 23px;
+    border-bottom: 1px solid $primary;
+  }
+
+  &__episodes-text {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4d4d4d;
+  }
+
+  &__episodes-hosted {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__episodes-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    span {
+      font-weight: 700;
+      color: $secondary;
+    }
+  }
+
+  &__episodes-date {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    color: #4d4d4d;
+  }
+
+  &__episodes-actions {
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__episodes-btn {
+    &.btn-outline {
+      padding: 0px 39px;
+      span {
+        color: $secondary;
+        display: inline-block;
+      }
+    }
+  }
+  &__episodes-play {
+    margin-right: 10px;
+  }
 }

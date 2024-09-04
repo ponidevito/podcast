@@ -2233,6 +2233,120 @@ h6 {
   color: #81adc8;
 }
 
+.item-podcast__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item-podcast__episodes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.item-podcast__episodes-number {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #cd4631;
+}
+
+.item-podcast__episodes-outline {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 160%;
+  color: #cd4631;
+  border: 1px solid #cd4631;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
+.item-podcast__episodes-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #000;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #000;
+}
+
+.item-podcast__episodes-text {
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4d4d4d;
+}
+
+.item-podcast__episodes-hosted {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item-podcast__episodes-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.item-podcast__episodes-author span {
+  font-weight: 700;
+  color: #cd4631;
+}
+
+.item-podcast__episodes-date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4d4d4d;
+}
+
+.item-podcast__episodes-actions {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.item-podcast__episodes-btn.btn-outline {
+  padding: 0px 39px;
+}
+
+.item-podcast__episodes-btn.btn-outline span {
+  color: #cd4631;
+  display: inline-block;
+}
+
+.item-podcast__episodes-play {
+  margin-right: 10px;
+}
+
 .footer {
   border-top: 2px solid #4d4d4d;
   padding: 140px 0px 80px 0px;
