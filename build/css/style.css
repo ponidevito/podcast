@@ -2170,6 +2170,69 @@ h6 {
   color: #cd4631;
 }
 
+.podcast-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+}
+
+.header-main-podcast__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.item-podcast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item-podcast__picture {
+  position: relative;
+}
+
+.item-podcast__picture img {
+  max-width: 472px;
+  width: 100%;
+}
+
+.item-podcast__social {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.item-podcast__social img {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.item-podcast__social img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.item-podcast__social-text {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 140%;
+  letter-spacing: -0.08em;
+  color: #81adc8;
+}
+
 .footer {
   border-top: 2px solid #4d4d4d;
   padding: 140px 0px 80px 0px;
