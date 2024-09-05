@@ -2360,6 +2360,12 @@ h6 {
   right: 0px;
 }
 
+.latest-episodes .decor-bottom {
+  position: absolute;
+  bottom: -90px;
+  left: -7%;
+}
+
 .latest-episodes__box {
   position: relative;
 }
@@ -2381,6 +2387,7 @@ h6 {
 
 .tabs {
   width: 100%;
+  position: relative;
 }
 
 .tabs__header {
@@ -2414,6 +2421,32 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   font-size: 50px;
+}
+
+.header-main__subtitle {
+  max-width: 766px;
+}
+
+.header-main__search {
+  max-width: 570px;
+  width: 100%;
+}
+
+.header-main__search-input {
+  width: 100%;
+  border: 1.5px solid #000;
+  border-radius: 16px;
+  padding: 24px 0px 24px 40px;
+  -webkit-box-shadow: 6px 6px 0 0 #81adc8;
+          box-shadow: 6px 6px 0 0 #81adc8;
+  background: #fff;
+  outline: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.header-main__search-input:focus {
+  border: 1.5px solid #cd4631;
 }
 
 .footer {
@@ -2717,6 +2750,10 @@ body {
 
 @media (max-width: 1340px) {
   .episodes__row .decor {
+    display: none;
+  }
+
+  .latest-episodes .decor-bottom {
     display: none;
   }
 }
