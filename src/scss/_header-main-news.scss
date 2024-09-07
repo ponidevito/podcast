@@ -1,29 +1,55 @@
 .header-main {
-  &__body {
-  }
-
-  &__title {
-  }
-
+  position: relative;
+  padding-bottom: 135px;
   &__subtitle {
     max-width: 766px;
   }
   &__search {
     max-width: 570px;
     width: 100%;
+    margin-bottom: -165px;
+    z-index: 1;
+    position: relative;
+
+    @include lg {
+      margin-bottom: 0;
+    }
+  }
+  &.header-main-news {
+    .decor-left-news {
+      bottom: 0;
+      top: unset;
+      @media (max-width: 1400px) {
+        img {
+          width: 195px;
+        }
+      }
+    }
   }
 
   &__search-input {
     width: 100%;
     border: 1.5px solid $primary;
     border-radius: 16px;
-    padding: 24px 0px 24px 40px;
+    padding: 24px 10px 24px 88px;
     box-shadow: 6px 6px 0 0 #81adc8;
     background: #fff;
     outline: none;
-    transition: .3s ease;
+    transition: 0.3s ease;
     &:focus {
-        border: 1.5px solid $secondary;
+      border: 1.5px solid $secondary;
+    }
+    @include xs {
+      padding: 20px 10px 20px 60px;
+    }
+  }
+  &__search-icon {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translate(0, -50%);
+    @include xs {
+      left: 20px;
     }
   }
 }

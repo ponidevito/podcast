@@ -1,15 +1,21 @@
 .header-wrapper {
-  background-color: #F7EDE8;
+  background-color: #f7ede8;
 }
 
 .header {
-  &__container {
-  }
   &__items {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 75px;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 123px;
+    @include lg {
+      gap: 35px;
+    }
   }
 
   &__buttons {
@@ -88,14 +94,14 @@
     &__body {
       display: flex;
       justify-content: space-between;
-      z-index: 2;
+      z-index: 3;
       @include sm {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #F7EDE8;
+        background-color: #f7ede8;
         padding: 100px 30px 30px 30px;
         transform: translate(-100%, 0px);
         overflow: auto;
@@ -176,6 +182,7 @@
     &__link {
       color: $primary;
       transition: 0.3s ease;
+      font-weight: 700;
       @include sm {
         font-size: 25px;
       }

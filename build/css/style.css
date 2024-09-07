@@ -613,7 +613,7 @@ h6 {
 }
 
 .header-wrapper {
-  background-color: #F7EDE8;
+  background-color: #f7ede8;
 }
 
 .header__items {
@@ -627,6 +627,16 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 75px;
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 123px;
 }
 
 .header__buttons {
@@ -652,7 +662,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header .menu__list {
@@ -700,6 +710,7 @@ h6 {
   color: #000;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  font-weight: 700;
 }
 
 .header .menu__link:hover {
@@ -1538,6 +1549,13 @@ h6 {
   gap: 20px;
   position: relative;
   z-index: 2;
+}
+
+.news__row.article-news {
+  row-gap: 40px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .news__row .decor-left {
@@ -2423,6 +2441,15 @@ h6 {
   font-size: 50px;
 }
 
+.tabs__content.tabs__content-news {
+  margin-top: 100px;
+}
+
+.header-main {
+  position: relative;
+  padding-bottom: 135px;
+}
+
 .header-main__subtitle {
   max-width: 766px;
 }
@@ -2430,13 +2457,21 @@ h6 {
 .header-main__search {
   max-width: 570px;
   width: 100%;
+  margin-bottom: -165px;
+  z-index: 1;
+  position: relative;
+}
+
+.header-main.header-main-news .decor-left-news {
+  bottom: 0;
+  top: unset;
 }
 
 .header-main__search-input {
   width: 100%;
   border: 1.5px solid #000;
   border-radius: 16px;
-  padding: 24px 0px 24px 40px;
+  padding: 24px 10px 24px 88px;
   -webkit-box-shadow: 6px 6px 0 0 #81adc8;
           box-shadow: 6px 6px 0 0 #81adc8;
   background: #fff;
@@ -2447,6 +2482,38 @@ h6 {
 
 .header-main__search-input:focus {
   border: 1.5px solid #cd4631;
+}
+
+.header-main__search-icon {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.latest-posts {
+  padding: 178px 0px;
+}
+
+.latest-posts__box {
+  position: relative;
+}
+
+.latest-posts__top {
+  position: relative;
+  z-index: 1;
+}
+
+.latest-posts .decor {
+  position: absolute;
+  left: 30%;
+  top: -35px;
+}
+
+.latest-posts .decor img {
+  position: absolute;
 }
 
 .footer {
@@ -2712,6 +2779,12 @@ body {
   }
 }
 
+@media (max-width: 1400px) {
+  .header-main.header-main-news .decor-left-news img {
+    width: 195px;
+  }
+}
+
 @media (max-width: 1399.99px) {
   .app .decor1 {
     display: none;
@@ -2810,6 +2883,10 @@ body {
   .latest-episodes .decor {
     display: none;
   }
+
+  .latest-posts .decor {
+    display: none;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -2868,6 +2945,10 @@ body {
   .column-news__title {
     font-size: 30px;
     line-height: 130%;
+  }
+
+  .header__box {
+    gap: 35px;
   }
 
   .header .menu__list {
@@ -3179,6 +3260,18 @@ body {
     padding: 65px 0px;
   }
 
+  .tabs__content.tabs__content-news {
+    margin-top: 60px;
+  }
+
+  .header-main__search {
+    margin-bottom: 0;
+  }
+
+  .latest-posts {
+    padding: 65px 0px;
+  }
+
   .footer {
     padding: 65px 0px;
   }
@@ -3407,6 +3500,10 @@ body {
     padding: 50px 0px;
   }
 
+  .latest-posts {
+    padding: 50px 0px;
+  }
+
   .footer {
     padding: 50px 0px;
   }
@@ -3531,7 +3628,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #F7EDE8;
+    background-color: #f7ede8;
     padding: 100px 30px 30px 30px;
     -webkit-transform: translate(-100%, 0px);
         -ms-transform: translate(-100%, 0px);
@@ -3729,6 +3826,10 @@ body {
     padding: 40px 0px;
   }
 
+  .news__row.article-news {
+    row-gap: 20px;
+  }
+
   .news__row {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -3832,6 +3933,14 @@ body {
   }
 
   .latest-episodes {
+    padding: 40px 0px;
+  }
+
+  .tabs__content.tabs__content-news {
+    margin-top: 30px;
+  }
+
+  .latest-posts {
     padding: 40px 0px;
   }
 
@@ -4158,6 +4267,18 @@ body {
   }
 
   .latest-episodes {
+    padding: 30px 0px;
+  }
+
+  .header-main__search-input {
+    padding: 20px 10px 20px 60px;
+  }
+
+  .header-main__search-icon {
+    left: 20px;
+  }
+
+  .latest-posts {
     padding: 30px 0px;
   }
 
