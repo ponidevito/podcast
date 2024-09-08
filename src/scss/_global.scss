@@ -14,7 +14,6 @@
   box-sizing: content-box;
 }
 
-
 // submenu
 
 .submenu {
@@ -317,6 +316,7 @@
 
   &__top {
     border-bottom: 1px solid #4d4d4d;
+    padding-bottom: 13px;
   }
 
   &__number-episode {
@@ -334,10 +334,14 @@
     line-height: 140%;
     letter-spacing: -0.02em;
     font-weight: 700;
-    color: #cd4631;
-    margin-bottom: 13px;
-    &.black {
-      color: $primary;
+    color: $primary;
+    transition: 0.3s ease;
+    display: inline-block;
+    // &.black {
+    //   color: $primary;
+    // }
+    &:hover {
+      color: #cd4631;
     }
   }
 
@@ -433,7 +437,11 @@
     font-size: 36px;
     line-height: 140%;
     letter-spacing: -0.02em;
-    color: #cd4631;
+    color: $primary;
+    transition: 0.3s ease;
+    &:hover {
+      color: $secondary;
+    }
     &:not(:last-child) {
       margin-bottom: 20px;
     }

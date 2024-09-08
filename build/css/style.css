@@ -376,6 +376,7 @@ h6 {
 
 .row-episodes__top {
   border-bottom: 1px solid #4d4d4d;
+  padding-bottom: 13px;
 }
 
 .row-episodes__number-episode {
@@ -394,12 +395,14 @@ h6 {
   line-height: 140%;
   letter-spacing: -0.02em;
   font-weight: 700;
-  color: #cd4631;
-  margin-bottom: 13px;
+  color: #000;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: inline-block;
 }
 
-.row-episodes__name.black {
-  color: #000;
+.row-episodes__name:hover {
+  color: #cd4631;
 }
 
 .row-episodes__bottom {
@@ -511,6 +514,12 @@ h6 {
   font-size: 36px;
   line-height: 140%;
   letter-spacing: -0.02em;
+  color: #000;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.column-news__title:hover {
   color: #cd4631;
 }
 
