@@ -10,6 +10,16 @@
   &__item {
     flex: 0 1 50%;
   }
+  .decor-right {
+    img {
+      @media (max-width: 1500px) {
+        width: 100px;
+      }
+      @media (max-width: 1340px) {
+        display: none;
+      }
+    }
+  }
 }
 .item-podcast {
   display: flex;
