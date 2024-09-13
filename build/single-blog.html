@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>News</title>
+      <title>Single Blog</title>
       <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:500,600,700&display=swap" rel="stylesheet" />
       <link rel="stylesheet" href="./css/style.min.css">
       <link
@@ -15,7 +15,7 @@
    <body>
       <div class="wrapper">
          <div class="header-wrapper">
-            <!-- Header -->
+             <!-- Header -->
             <!-- header -->
 <header class="header">
     <div class="header__container">
@@ -77,238 +77,26 @@
   </header>
   
             <!-- Header main title -->
-            <section class="header-main header-main-news">
-    <div class="decor-left decor-left-news"><img src="./img/news/decor-left.png" alt="decor left"></div>
+            <section class="header-main header-main-single-blog">
+    <div class="decor-left decor-left-single-blog"><img src="./img/news/decor-left.png" alt="decor left"></div>
     <div class="decor-right"><img src="./img/header-main/decor-right.png" alt="decor left"></div>
     <div class="header-main__container">
+        <nav class="breadcrumbs">
+            <div style="display: flex;"><img src="./img/header-main/header-main-single-blog/left-arrow.svg" alt="arrow"> </div>
+            <a href="news.html">Back to articles</a>
+        </nav>
        <div class="header-main__body">
-          <h1 class="header-main__title">Article and <span>News</span></h1>
-          <p class="header-main__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam–quis.
-          </p>
-          <div class="header-main__search">
-                <input type="search" placeholder="Search.." class="header-main__search-input" name="search" id="search">
-                <div class="header-main__search-icon">
-                  <img src="./img/latest-posts/search.svg" alt="icon">
-                </div>
-          </div>
+        <div class="header-main-single-blog__under-title">TIPS & TRICKS</div>
+          <h2 class="header-main-single-blog__title">Doodle Artwork 101</h2>
        </div>
     </div>
  </section>
          </div>
          <!-- Main Page -->
          <main class="main">
-            <!-- latests posts -->
-            <section class="latest-posts">
-    <div class="latest-posts__container">
-        <div class="our-sponsor__box">
-            <div class="latest-posts__top top">
-                <h2 class="top__title">Latest Posts</h2>
-            </div>
-        <div class="decor"><img src="./img/latest-posts/decor-title.svg" alt="decor"></div>
-        </div>
 
-            <!-- Tabs -->
-            <div class="tabs">
-                <div class="tabs__header">
-                    <div class="tabs__header-item active">All</div>
-                    <div class="tabs__header-item">Business</div>
-                    <div class="tabs__header-item">News</div>
-                    <div class="tabs__header-item">Tips & Trick</div>
-                    <div class="tabs__header-item">Podcast</div>
-                    <div class="tabs__header-item">Productivity</div>
-                </div>
-                <div class="tabs__content tabs__content-news">
-                    <div class="tabs__content-item">
-                        <div class="news__row article-news">
-                            <div class="news__column column-news shadow">
-                                <div class="column-news__picture"><img src="./img/news/podcast.jpg" alt="Setup your own podcast"></div>
-                                <div class="column-news__info">
-                                    <div class="column-news__name">PODCAST</div>
-                                    <a href="#" class="column-news__title">Setup your own podcast</a>
-                                    <p class="column-news__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
-                                </div>
-                                <div class="column-news__actions">
-                                    <div class="column-news__btns">
-                                        <a href="#" class="column-news__btn">business</a>
-                                        <a href="#" class="column-news__btn">startup</a>
-                                    </div>
-                                    <div class="column-news__date">
-                                        <p>Sep 14, 2021</p>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="news__column column-news">
-                                <div class="column-news__picture"><img src="./img/news/tips.jpg" alt="Doodle artwork 101"></div>
-                                <div class="column-news__info">
-                                    <div class="column-news__name">TIPS & TRICK</div>
-                                    <a href="single-blog.html" class="column-news__title">Doodle artwork 101</a>
-                                    <p class="column-news__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
-                                </div>
-                                <div class="column-news__actions">
-                                    <div class="column-news__btns">
-                                        <a href="#" class="column-news__btn">art</a>
-                                        <a href="#" class="column-news__btn">creative</a>
-                                        <a href="#" class="column-news__btn">tips and trick</a>
-                                    </div>
-                                    <div class="column-news__date">
-                                        <p>Sep 12, 2021</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news__column column-news">
-                                <div class="column-news__picture"><img src="./img/latest-posts/mother-nature-taking-over.jpg" alt="Mother Nature Taking Over"></div>
-                                <div class="column-news__info">
-                                    <div class="column-news__name">NEWS</div>
-                                    <a href="#" class="column-news__title">Mother Nature Taking Over</a>
-                                    <p class="column-news__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
-                                </div>
-                                <div class="column-news__actions">
-                                    <div class="column-news__btns">
-                                        <a href="#" class="column-news__btn">news</a>
-                                        <a href="#" class="column-news__btn">nature</a>
-                                    </div>
-                                    <div class="column-news__date">
-                                        <p>Sep 12, 2021</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news__column column-news">
-                                <div class="column-news__picture"><img src="./img/latest-posts/how-to-be-productive.jpg" alt="How to Be Productive"></div>
-                                <div class="column-news__info">
-                                    <div class="column-news__name">PRODUCTIVITY</div>
-                                    <a href="#" class="column-news__title">How to Be Productive</a>
-                                    <p class="column-news__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
-                                </div>
-                                <div class="column-news__actions">
-                                    <div class="column-news__btns">
-                                        <a href="#" class="column-news__btn">productivity</a>
-                                        <a href="#" class="column-news__btn">mindset</a>
-                                    </div>
-                                    <div class="column-news__date">
-                                        <p>Sep 12, 2021</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="tabs__content-item">
-                        <div class="news__row article-news">
-                            <div class="news__column column-news">
-                                <div class="column-news__picture"><img src="./img/latest-posts/mother-nature-taking-over.jpg" alt="Mother Nature Taking Over"></div>
-                                <div class="column-news__info">
-                                    <div class="column-news__name">NEWS</div>
-                                    <a href="#" class="column-news__title">Mother Nature Taking Over</a>
-                                    <p class="column-news__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
-                                </div>
-                                <div class="column-news__actions">
-                                    <div class="column-news__btns">
-                                        <a href="#" class="column-news__btn">news</a>
-                                        <a href="#" class="column-news__btn">nature</a>
-                                    </div>
-                                    <div class="column-news__date">
-                                        <p>Sep 12, 2021</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news__column column-news">
-                                <div class="column-news__picture"><img src="./img/latest-posts/how-to-be-productive.jpg" alt="How to Be Productive"></div>
-                                <div class="column-news__info">
-                                    <div class="column-news__name">PRODUCTIVITY</div>
-                                    <a href="#" class="column-news__title">How to Be Productive</a>
-                                    <p class="column-news__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
-                                </div>
-                                <div class="column-news__actions">
-                                    <div class="column-news__btns">
-                                        <a href="#" class="column-news__btn">productivity</a>
-                                        <a href="#" class="column-news__btn">mindset</a>
-                                    </div>
-                                    <div class="column-news__date">
-                                        <p>Sep 12, 2021</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news__column column-news shadow">
-                                <div class="column-news__picture"><img src="./img/news/podcast.jpg" alt="Setup your own podcast"></div>
-                                <div class="column-news__info">
-                                    <div class="column-news__name">PODCAST</div>
-                                    <a href="#" class="column-news__title">Setup your own podcast</a>
-                                    <p class="column-news__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
-                                </div>
-                                <div class="column-news__actions">
-                                    <div class="column-news__btns">
-                                        <a href="#" class="column-news__btn">business</a>
-                                        <a href="#" class="column-news__btn">startup</a>
-                                    </div>
-                                    <div class="column-news__date">
-                                        <p>Sep 14, 2021</p>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="news__column column-news">
-                                <div class="column-news__picture"><img src="./img/news/tips.jpg" alt="Doodle artwork 101"></div>
-                                <div class="column-news__info">
-                                    <div class="column-news__name">TIPS & TRICK</div>
-                                    <a href="#" class="column-news__title">Doodle artwork 101</a>
-                                    <p class="column-news__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
-                                </div>
-                                <div class="column-news__actions">
-                                    <div class="column-news__btns">
-                                        <a href="#" class="column-news__btn">art</a>
-                                        <a href="#" class="column-news__btn">creative</a>
-                                        <a href="#" class="column-news__btn">tips and trick</a>
-                                    </div>
-                                    <div class="column-news__date">
-                                        <p>Sep 12, 2021</p>
-                                    </div>
-                                </div>
-                            </div>
-                         
-                        </div>
-                        
-                    </div>
-                    <div class="tabs__content-item">News</div>
-                    <div class="tabs__content-item">Tips & Trick</div>
-                    <div class="tabs__content-item">Podcast</div>
-                    <div class="tabs__content-item">Productivity</div>
-                </div>
-            </div>
-    </div>
-</section>
             <!-- app -->
-            <section class="app">
-    <div class="scribble"><img src="./img/app/scribble.svg" alt="scribble"></div>
-     <div class="decor1"><img src="./img/app/decor-left-01.svg" alt="decor"></div>
-     <div class="decor2"><img src="./img/app/decor-left-02.svg" alt="decor"></div> 
-     <div class="decor3"><img src="./img/app/decor-left-03.svg" alt="decor"></div>
-     <div class="decor-right"><img src="./img/app/decor-right.png" alt="decor right"></div>    
-    <div class="app__picture-left"><img src="./img/app/trending.png" alt="Trending"></div>
-    <div class="app__picture-right"><img src="./img/app/now-playing.png" alt="Now Playing"></div>
-    <div class="app__picture-right"></div>
-    <div class="app__container">
-        <div class="app__beta">
-            <a href="#" class="app__beta-btn">BETA</a>
-        </div>
-        <div class="app__top top">
-            <h2 class="top__title">Available now <br> Pod of Cast App</h2>
-            <p class="top__subtitle">We just launched our podcast app!</p>
-        </div>
-        <div class="app__actions">
-            <a href="#" class="app__btn btn">DOWNLOAD NOW</a>
-            <div class="decor-mid"><img src="./img/app/decor-mid.svg" alt="decor"></div>
-        </div>
-        <div class="app__social social-app">
-            <p class="social-app__text">Content also available on:</p>
-            <div class="social-app__icons">
-                <a href="#" class="social-app__item"><img src="./img/app/podcast.svg" alt="podcast"></a>
-                <a href="#" class="social-app__item"><img src="./img/app/spotify.svg" alt="spotify"></a>
-                <a href="#" class="social-app__item"><img src="./img/app/youtube.svg" alt="youtube"></a>
-            </div>
-        </div>
-    </div>
-</section>
+            
          </main>
          <!-- Footer -->
          <footer class="footer">

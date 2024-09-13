@@ -14,6 +14,28 @@
   box-sizing: content-box;
 }
 
+// breads
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+.breadcrumbs a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4d4d4d;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs span {
+  color: #555;
+}
+
 // submenu
 
 .submenu {

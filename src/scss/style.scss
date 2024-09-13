@@ -8,6 +8,7 @@
 
 // Sections or Pages SCSS-files imports
 @import "./header";
+
 @import "./header-main";
 @import "./talk";
 @import "./reviews";
@@ -22,9 +23,9 @@
 @import "./podcast-detail";
 @import "./latest-episodes";
 @import "./tabs";
-@import "./_header-main-news";
+@import "./header-main-news";
 @import "./latest-posts";
-
+@import "./header-main-single-blog";
 
 @import './footer';
 
