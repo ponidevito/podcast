@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   padding: 0px;
   margin: 0px;
@@ -1019,11 +1021,20 @@ h6 {
   top: unset;
 }
 
+.header-main-single-blog__box {
+  margin-top: 47px;
+  text-align: center;
+}
+
 .header-main-single-blog__under-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 160%;
   color: #cd4631;
+}
+
+.header-main-single-blog__under-title:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .header-main-single-blog__title {
@@ -1033,6 +1044,10 @@ h6 {
   letter-spacing: -0.02em;
   text-align: center;
   color: #000;
+}
+
+.header-main-single-blog__box-tags {
+  margin-top: 40px;
 }
 
 .talk {
@@ -2577,6 +2592,54 @@ h6 {
 .latest-posts .decor img {
   position: absolute;
 }
+
+.tags__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+
+/* Приховуємо стандартний чекбокс */
+
+input[type=checkbox] {
+  display: none;
+}
+
+/* Стиль для кастомного чекбокса */
+
+.custom-checkbox {
+  cursor: pointer;
+  border: 1px solid #4d4d4d;
+  border-radius: 4px;
+  padding: 6px 12px;
+  -webkit-transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4d4d4d;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.custom-checkbox:hover {
+  background-color: #cd4631;
+  border-color: #cd4631;
+  color: white;
+}
+
+/* Стиль для вибраного стану чекбокса */
+
+input[type=checkbox]:checked + .custom-checkbox {
+  background-color: #cd4631;
+  border-color: #cd4631;
+  color: white;
+}
+
+/* Стиль для контейнера з тегами */
 
 .footer {
   border-top: 2px solid #4d4d4d;

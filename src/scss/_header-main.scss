@@ -346,11 +346,18 @@
     left: 0;
     top: unset;
   }
+  &__box {
+    margin-top: 47px;
+    text-align: center;
+  }
   &__under-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 160%;
     color: $secondary;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
   &__title {
     font-weight: 700;
@@ -359,5 +366,8 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: $primary;
+  }
+  &__box-tags {
+    margin-top: 40px;
   }
 }
