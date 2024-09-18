@@ -346,6 +346,21 @@
     left: 0;
     top: unset;
   }
+  .decor-right-single-blog {
+    top: unset;
+    bottom: 135px;
+  }
+  &__top-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__date {
+    font-size: 14px;
+    line-height: 160%;
+    color: #4d4d4d;
+  }
   &__box {
     margin-top: 47px;
     text-align: center;
@@ -391,12 +406,14 @@
   }
   &__img {
     position: relative;
-    z-index: 3;
+    z-index: 2;
   }
   &__picture {
     width: 100%;
     img {
       max-width: 100%;
+      position: relative;
+   
       width: 100%;
     }
   }
