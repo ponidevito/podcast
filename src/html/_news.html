@@ -6,7 +6,7 @@
             <p class="top__subtitle">News, tips, tricks and more</p>
         </div>
         <div class="news__row">
-            <div class="decor-left"><img src="./img/news/decor-left.svg" alt="decor left"></div>
+            <div class="decor-left"><img src="./img/news/decor-left.png" alt="decor left"></div>
             <div class="decor-right"><img src="./img/news/decor-rigth.svg" alt="decor right"></div>
             <div class="news__column column-news shadow">
                 <div class="column-news__picture"><img src="./img/news/podcast.jpg" alt="Setup your own podcast"></div>
@@ -16,10 +16,16 @@
                     <p class="column-news__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
                 </div>
                 <div class="column-news__actions">
-                    <div class="column-news__btns">
-                        <a href="#" class="column-news__btn">business</a>
-                        <a href="#" class="column-news__btn">startup</a>
-                    </div>
+                    <form>
+                        <div class="tags__box">
+                            <input type="checkbox" id="business" name="tags" value="business">
+                            <label for="business" class="custom-checkbox checkbox-episodes">business</label>
+                
+                            <input type="checkbox" id="startup" name="tags" value="startup">
+                            <label for="startup" class="custom-checkbox checkbox-episodes">startup</label>
+                
+                        </div>
+                    </form>
                     <div class="column-news__date">
                         <p>Sep 14, 2021</p>
                     </div>
@@ -34,11 +40,19 @@
                     <p class="column-news__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
                 </div>
                 <div class="column-news__actions">
-                    <div class="column-news__btns">
-                        <a href="#" class="column-news__btn">art</a>
-                        <a href="#" class="column-news__btn">creative</a>
-                        <a href="#" class="column-news__btn">tips and trick</a>
-                    </div>
+                    <form>
+                        <div class="tags__box">
+                            <input type="checkbox" id="art" name="tags" value="art">
+                            <label for="art" class="custom-checkbox checkbox-episodes">art</label>
+                
+                            <input type="checkbox" id="creative" name="tags" value="creative">
+                            <label for="creative" class="custom-checkbox checkbox-episodes">creative</label>
+
+                            <input type="checkbox" id="tips" name="tags" value="tips and trick">
+                            <label for="tips" class="custom-checkbox checkbox-episodes">tips and trick</label>
+                
+                        </div>
+                    </form>
                     <div class="column-news__date">
                         <p>Sep 12, 2021</p>
                     </div>

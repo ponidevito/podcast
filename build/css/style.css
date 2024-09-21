@@ -626,6 +626,49 @@ h6 {
   color: #4d4d4d;
 }
 
+/* Приховуємо стандартний чекбокс */
+
+input[type=checkbox] {
+  display: none;
+}
+
+/* Стиль для кастомного чекбокса */
+
+.custom-checkbox {
+  cursor: pointer;
+  border: 1px solid #4d4d4d;
+  border-radius: 4px;
+  padding: 6px 12px;
+  -webkit-transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4d4d4d;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.custom-checkbox:hover {
+  background-color: #cd4631;
+  border-color: #cd4631;
+  color: white;
+}
+
+.custom-checkbox.checkbox-episodes {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* Стиль для вибраного стану чекбокса */
+
+input[type=checkbox]:checked + .custom-checkbox {
+  background-color: #cd4631;
+  border-color: #cd4631;
+  color: white;
+}
+
+/* Стиль для контейнера з тегами */
+
 .black {
   color: #000 !important;
 }
@@ -768,6 +811,10 @@ h6 {
 .header-main {
   position: relative;
   padding: 65px 0px 120px 0px;
+}
+
+.header-main.header-main-podcast {
+  padding-bottom: 40px;
 }
 
 .header-main .decor-left {
@@ -2339,6 +2386,24 @@ h6 {
           flex: 0 1 50%;
 }
 
+.header-main-podcast__tags {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+
+.header-main-podcast__tags-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4d4d4d;
+}
+
 .item-podcast {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2664,44 +2729,6 @@ h6 {
           align-items: center;
   gap: 6px;
 }
-
-/* Приховуємо стандартний чекбокс */
-
-input[type=checkbox] {
-  display: none;
-}
-
-/* Стиль для кастомного чекбокса */
-
-.custom-checkbox {
-  cursor: pointer;
-  border: 1px solid #4d4d4d;
-  border-radius: 4px;
-  padding: 6px 12px;
-  -webkit-transition: background-color 0.3s, border-color 0.3s;
-  transition: background-color 0.3s, border-color 0.3s;
-  font-size: 14px;
-  line-height: 160%;
-  color: #4d4d4d;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.custom-checkbox:hover {
-  background-color: #cd4631;
-  border-color: #cd4631;
-  color: white;
-}
-
-/* Стиль для вибраного стану чекбокса */
-
-input[type=checkbox]:checked + .custom-checkbox {
-  background-color: #cd4631;
-  border-color: #cd4631;
-  color: white;
-}
-
-/* Стиль для контейнера з тегами */
 
 .footer {
   border-top: 2px solid #4d4d4d;
@@ -3446,6 +3473,14 @@ body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     gap: 30px;
+  }
+
+  .header-main-podcast__tags {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
   }
 
   .item-podcast__episodes-hosted {
