@@ -1,6 +1,18 @@
 .background-room {
-    position: relative;
-    padding: 0px 0px 80px 0px;
+  position: relative;
+  padding: 0px 0px 100px 0px;
+  @include lg {
+    padding: 65px 0px;
+  }
+  @include md {
+    padding: 50px 0px;
+  }
+  @include sm {
+    padding: 40px 0px;
+  }
+  @include xs {
+    padding: 30px 0px;
+  }
   &__picture {
     width: 100%;
     img {
@@ -13,24 +25,50 @@
     text-align: center;
     position: relative;
     max-width: 780px;
-    margin: 100px auto;
+    margin: 100px auto 80px auto;
     @include lg {
-        max-width: 100%;
-        margin: 60px auto;
+      max-width: 100%;
+      margin: 60px auto;
     }
     @include sm {
-        max-width: 100%;
-        margin: 30px auto;
+      max-width: 100%;
+      margin: 30px auto;
     }
     .decor-left {
       position: absolute;
-      top: -40px;
+      top: -50px;
       left: -60px;
 
       @include lg {
         display: none;
       }
     }
+  }
+  &__body {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #4d4d4d;
+    @include lg {
+      padding-bottom: 60px;
+    }
+    @include sm {
+      padding-bottom: 30px;
+    }
+    @include xs {
+      flex-direction: column;
+    }
+  }
 
+  &__item {
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 160%;
+    color: #4d4d4d;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }
