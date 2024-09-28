@@ -2778,12 +2778,90 @@ input[type=checkbox]:checked + .custom-checkbox {
 }
 
 .talk-blog {
-  padding: 0px 0px 100px 0px;
+  padding: 0px 0px 130px 0px;
 }
 
 .talk-blog .decor-left-talk-blog {
   bottom: 0;
   left: -60px;
+}
+
+.talk-blog__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding: 100px 0px 0px 0px;
+}
+
+.talk-blog__item ul li {
+  font-size: 16px;
+  line-height: 160%;
+  color: #4d4d4d;
+  padding-left: 8px;
+  list-style-type: disc;
+  margin-left: 15px;
+}
+
+.talk-blog__item ul li:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.talk-blog__item ul li::marker {
+  color: #cd4631;
+}
+
+.talk-blog__item ol li {
+  font-size: 16px;
+  line-height: 160%;
+  color: #4d4d4d;
+  padding-left: 8px;
+}
+
+.talk-blog__item ol li:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.talk-blog__item ol li::marker {
+  color: #cd4631;
+}
+
+.talk-blog__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  margin-bottom: 60px;
+}
+
+.artwork__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding: 0px 0px 140px 0px;
+}
+
+.artwork__picture {
+  text-align: center;
+}
+
+.artwork__picture img {
+  max-width: 100%;
+}
+
+.artwork__under-picture {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4d4d4d;
+}
+
+.link {
+  font-size: 14px;
+  line-height: 160%;
+  color: #4d4d4d;
 }
 
 .footer {
@@ -3571,7 +3649,7 @@ body {
   }
 
   .background-room {
-    padding: 65px 0px;
+    padding: 0px 0px 65px 0px;
   }
 
   .background-room__about {
@@ -3588,6 +3666,14 @@ body {
   }
 
   .talk-blog {
+    padding: 0px 0px 65px 0px;
+  }
+
+  .talk-blog__row {
+    padding: 65px 0px 0px 0px;
+  }
+
+  .artwork__row {
     padding: 0px 0px 65px 0px;
   }
 
@@ -3824,10 +3910,22 @@ body {
   }
 
   .background-room {
-    padding: 50px 0px;
+    padding: 0px 0px 50px 0px;
   }
 
   .talk-blog {
+    padding: 0px 0px 50px 0px;
+  }
+
+  .talk-blog__row {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .talk-blog__title {
+    margin-bottom: 30px;
+  }
+
+  .artwork__row {
     padding: 0px 0px 50px 0px;
   }
 
@@ -4277,7 +4375,7 @@ body {
   }
 
   .background-room {
-    padding: 40px 0px;
+    padding: 0px 0px 40px 0px;
   }
 
   .background-room__about {
@@ -4290,6 +4388,28 @@ body {
   }
 
   .talk-blog {
+    padding: 0px 0px 40px 0px;
+  }
+
+  .talk-blog__row {
+    padding: 40px 0px 0px 0px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .talk-blog__item ul li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .talk-blog__item ol li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .talk-blog__item ol li {
+    margin-left: 15px;
+  }
+
+  .artwork__row {
     padding: 0px 0px 40px 0px;
   }
 
@@ -4637,7 +4757,7 @@ body {
   }
 
   .background-room {
-    padding: 30px 0px;
+    padding: 0px 0px 30px 0px;
   }
 
   .background-room__body {
@@ -4648,6 +4768,16 @@ body {
   }
 
   .talk-blog {
+    padding: 0px 0px 30px 0px;
+  }
+
+  .talk-blog__row {
+    padding: 30px 0px 0px 0px;
+  }
+
+  .artwork__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0px 0px 30px 0px;
   }
 

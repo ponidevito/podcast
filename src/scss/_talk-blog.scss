@@ -1,5 +1,5 @@
 .talk-blog {
-  padding: 0px 0px 100px 0px;
+  padding: 0px 0px 130px 0px;
   @include lg {
     padding: 0px 0px 65px 0px;
   }
@@ -15,5 +15,74 @@
   .decor-left-talk-blog {
     bottom: 0;
     left: -60px;
+  }
+  &__row {
+    display: flex;
+    gap: 30px;
+    padding: 100px 0px 0px 0px;
+    @include lg {
+      padding: 65px 0px 0px 0px;
+    }
+    @include md {
+      padding: 50px 0px 0px 0px;
+    }
+    @include sm {
+      padding: 40px 0px 0px 0px;
+      flex-wrap: wrap;
+    }
+    @include xs {
+      padding: 30px 0px 0px 0px;
+    }
+  }
+
+  &__item {
+    ul li {
+      font-size: 16px;
+      line-height: 160%;
+      color: #4d4d4d;
+      padding-left: 8px;
+      list-style-type: disc;
+      margin-left: 15px;
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+        @include sm {
+          margin-bottom: 20px;
+        }
+      }
+      &::marker {
+        color: $secondary;
+      }
+    }
+    ol li {
+      font-size: 16px;
+      line-height: 160%;
+      color: #4d4d4d;
+      padding-left: 8px;
+      &:not(:last-child) {
+        margin-bottom: 40px;
+        @include sm {
+          margin-bottom: 20px;
+        }
+      }
+      &::marker {
+        color: $secondary;
+      }
+      @include sm {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    margin-bottom: 60px;
+    @include md {
+      margin-bottom: 30px;
+    }
   }
 }
