@@ -39,14 +39,23 @@
     }
   }
 
+  &__top {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
   &__body {
     display: flex;
     flex-direction: column;
     position: relative;
+    padding-top: 40px;
+    border-top: 1px solid #4d4d4d;
     &:not(:last-child) {
       margin-bottom: 60px;
       @include sm {
         margin-bottom: 40px;
+        padding-top: 20px;
       }
       @include xs {
         margin-bottom: 20px;

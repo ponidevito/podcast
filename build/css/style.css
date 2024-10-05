@@ -2253,6 +2253,10 @@ input[type=checkbox]:checked + .custom-checkbox {
   right: -8%;
 }
 
+.form__top:not(:last-child) {
+  margin-bottom: 60px;
+}
+
 .form__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2262,6 +2266,8 @@ input[type=checkbox]:checked + .custom-checkbox {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  padding-top: 40px;
+  border-top: 1px solid #4d4d4d;
 }
 
 .form__body:not(:last-child) {
@@ -2862,6 +2868,11 @@ input[type=checkbox]:checked + .custom-checkbox {
   font-size: 14px;
   line-height: 160%;
   color: #4d4d4d;
+}
+
+.related-article {
+  position: relative;
+  padding: 0px 0px 140px 0px;
 }
 
 .footer {
@@ -3677,6 +3688,10 @@ body {
     padding: 0px 0px 65px 0px;
   }
 
+  .related-article {
+    padding: 65px 0px;
+  }
+
   .footer {
     padding: 65px 0px;
   }
@@ -3927,6 +3942,10 @@ body {
 
   .artwork__row {
     padding: 0px 0px 50px 0px;
+  }
+
+  .related-article {
+    padding: 50px 0px;
   }
 
   .footer {
@@ -4338,6 +4357,7 @@ body {
 
   .form__body:not(:last-child) {
     margin-bottom: 40px;
+    padding-top: 20px;
   }
 
   .item-podcast__social-text {
@@ -4411,6 +4431,10 @@ body {
 
   .artwork__row {
     padding: 0px 0px 40px 0px;
+  }
+
+  .related-article {
+    padding: 40px 0px;
   }
 
   .footer {
@@ -4779,6 +4803,10 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 0px 0px 30px 0px;
+  }
+
+  .related-article {
+    padding: 30px 0px;
   }
 
   .footer {
