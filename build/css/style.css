@@ -907,6 +907,7 @@ input[type=checkbox]:checked + .custom-checkbox {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 12px;
 }
 
 .header-main .swiper-slide__image {
